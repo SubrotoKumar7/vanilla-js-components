@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ACBAC4;
+    overflow: hidden;
+}
+h1{
+    color: #30364F;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.input-area{
+    position: relative;
+    width: 300px;
+    max-width: 700px;
+}
+.input-area input{
+    width: 100%;
+    padding: 10px;
+    letter-spacing: 2px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: #30364F;
+}
+.fa-copy{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+}
+.fa-copy:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.btn{
+    padding: 7px 10px;
+    margin: 10px 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+    background-color: #30364F;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    transition: all 0.5s;
+}
+.btn:hover{
+    background-color: #22242c;
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+.alert{
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    padding: 7px 15px;
+    background-color: #30364F;
+    color: white;
+    border-radius: 3px;
+    transition: all 1s linear;
+}
+.active{
+    right: -50%;
+}
+.warning{
+    position: fixed;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #30364F;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 3px;
+    transition: 1s;
+}

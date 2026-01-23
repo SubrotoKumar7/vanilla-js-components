@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/lock.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <div>
+        <h1>Generate Random Password</h1>
+        <div class="input-area">
+            <input type="text" id="password" placeholder="Generate an password" readonly>
+            <i class="fa-regular fa-copy"></i>
+        </div>
+        <div>
+            <button class="btn">Generate</button>
+        </div>
+        <div class="alert active"><i class="fa-solid fa-check"></i> Password Copied!</div>
+        <div class="warning"><i class="fa-solid fa-exclamation"></i> Please generate password first.</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
