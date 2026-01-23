@@ -12,11 +12,14 @@
     <div>
         <h1>Generate Random Password</h1>
         <div class="input-area">
-            <input type="text" id="password" placeholder="Generate an password" readonly>
-            <i class="fa-regular fa-copy"></i>
+            <input type="password" id="password" placeholder="Generate an password" readonly>
+            <div class="toggle">
+                <i id="toggle-eye" class="fa-solid fa-eye-slash"></i>
+            </div>
         </div>
         <div>
-            <button class="btn">Generate</button>
+            <button class="btn"><i class="fa-solid fa-rotate"></i> Generate</button>
+            <button id="copy" class="btn"><i class="fa-solid fa-copy"></i> Copy</button>
         </div>
         <div class="alert active"><i class="fa-solid fa-check"></i> Password Copied!</div>
         <div class="warning"><i class="fa-solid fa-exclamation"></i> Please generate password first.</div>

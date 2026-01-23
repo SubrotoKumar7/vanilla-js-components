@@ -1,9 +1,10 @@
 // selectors
 const inputElement = document.getElementById('password');
 const buttonElement = document.querySelector('.btn');
-const copyElement = document.querySelector('.fa-copy');
+const copyElement = document.getElementById('copy');
 const alertElement = document.querySelector('.alert');
 const warningElement = document.querySelector('.warning');
+const eyeElement = document.getElementById('toggle-eye');
 
 buttonElement.addEventListener("click", ()=> {
     generatePassword();
@@ -15,6 +16,9 @@ copyElement.addEventListener('click', ()=> {
     warningAlert();
 })
 
+eyeElement.addEventListener('click', ()=> {
+    toggleEye();
+})
 
 function generatePassword(){
     const base = "bcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-={}[]|:;'<>,.?/~`";
@@ -42,4 +46,19 @@ function warningAlert(){
     setTimeout(() => {
         warningElement.style.top = "-20%";
     }, 3000);
+}
+
+function toggleEye(){
+    const type = inputElement.type;    
+
+    if(type === "password"){
+        eyeElement.classList.remove('fa-eye-slash');
+        eyeElement.classList.add('fa-eye');
+        inputElement.type = "text";
+    } else{
+        eyeElement.classList.remove('fa-eye');
+        eyeElement.classList.add('fa-eye-slash');
+        inputElement.type = "password";
+    }
+
 }
