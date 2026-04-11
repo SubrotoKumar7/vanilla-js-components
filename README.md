@@ -1,7 +1,7 @@
-# 🧠 JavaScript Fundamentals Projects (No Libraries)
+# 🧠 JavaScript Fundamentals Projects 
 
 This repository is created with a single goal in mind:  
-**to strengthen my core JavaScript, HTML, and CSS fundamentals by building real-world components from scratch — without using any npm packages or libraries.**
+**to strengthen my core JavaScript, HTML, and CSS fundamentals by building real-world components from scratch — without using any npm packages.**
 
 As a **MERN Stack Developer**, I often used ready-made npm packages (like sliders, toast notifications, popup, etc.) without fully understanding how they work internally.  
 This repo is my effort to **reverse that habit** and truly understand the **logic behind common UI components** by building them using **raw (vanilla) code**.
