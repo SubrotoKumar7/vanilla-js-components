@@ -1,7 +1,8 @@
-const buttonEl = document.querySelector('#generate-btn');
+const generateEl = document.querySelector('#generate-btn');
 const codeEl = document.querySelector('#code');
+const downloadEl = document.getElementById('btn-download');
 
-buttonEl.addEventListener('click', ()=> {
+generateEl.addEventListener('click', ()=> {
     codeEl.innerHTML = "";
     const inputEl = document.querySelector('#input').value;
 
@@ -13,4 +14,20 @@ buttonEl.addEventListener('click', ()=> {
         colorLight : "#ffffff",
         correctLevel : QRCode.CorrectLevel.H
     });
+
+    const img = document.querySelector('#code img');
+    
+    if(img){
+        downloadEl.style.display = "block";
+    }
+})
+
+downloadEl.addEventListener('click', ()=> {
+    const img = document.querySelector('#code img');
+
+    const link = document.createElement('a');
+    link.href = img.src;
+    link.download = "qrcode.png";
+
+    link.click();
 })

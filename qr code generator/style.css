@@ -25,8 +25,8 @@ main{
 .input-area #input{
     padding: 5px 10px;
 }
-.input-area button{
-    padding: 7px 10px;
+.btn{
+    padding: 7px 20px;
     background-color: black;
     border: none;
     outline: none;
@@ -34,7 +34,7 @@ main{
     font-weight: 500;
     color: white;
 }
-.input-area button:hover{
+button:hover{
     cursor: pointer;
 }
 .output-area{
@@ -42,7 +42,11 @@ main{
     text-align: center;
 }
 .code{
-    margin: 20px auto;
+    margin: 20px auto 5px;
     width: 150px;
     height: 150px;
+}
+#btn-download{
+    display: none;
+    margin: auto;
 }
