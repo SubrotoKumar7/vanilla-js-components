@@ -6,19 +6,23 @@ generateEl.addEventListener('click', ()=> {
     codeEl.innerHTML = "";
     const inputEl = document.querySelector('#input').value;
 
-    let qrcode = new QRCode(codeEl, {
-        text: inputEl,
-        width: 128,
-        height: 128,
-        colorDark : "#000000",
-        colorLight : "#ffffff",
-        correctLevel : QRCode.CorrectLevel.H
-    });
-
-    const img = document.querySelector('#code img');
+    if(inputEl.trim().length > 0){
+        let qrcode = new QRCode(codeEl, {
+            text: inputEl,
+            width: 150,
+            height: 150,
+            colorDark : "#000000",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
     
-    if(img){
-        downloadEl.style.display = "block";
+        const img = document.querySelector('#code img');
+        
+        if(img){
+            downloadEl.style.display = "block";
+        }
+    } else{
+        alert("Please writing something in the input box")
     }
 })
 
