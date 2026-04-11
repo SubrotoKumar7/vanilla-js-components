@@ -1,9 +1,11 @@
 const generateEl = document.querySelector('#generate-btn');
 const codeEl = document.querySelector('#code');
 const downloadEl = document.getElementById('btn-download');
+const alertEl = document.getElementById('alert');
 
 generateEl.addEventListener('click', ()=> {
     codeEl.innerHTML = "";
+    downloadEl.style.display = "none";
     const inputEl = document.querySelector('#input').value;
 
     if(inputEl.trim().length > 0){
@@ -22,7 +24,14 @@ generateEl.addEventListener('click', ()=> {
             downloadEl.style.display = "block";
         }
     } else{
-        alert("Please writing something in the input box")
+        setTimeout(()=> {
+            alertEl.style.top = "10px";
+
+            // hide toast
+            setTimeout(()=> {
+                alertEl.style.top = "-1000px";
+            }, 2000)
+        }, 2000);
     }
 })
 
