@@ -21,7 +21,6 @@ This repo is my effort to **reverse that habit** and truly understand the **logi
 ## 🚫 What This Repository Does NOT Use
 
 - ❌ No npm packages
-- ❌ No third-party libraries
 - ❌ No frameworks
 - ✅ Only **HTML, CSS, and Vanilla JavaScript**
 
